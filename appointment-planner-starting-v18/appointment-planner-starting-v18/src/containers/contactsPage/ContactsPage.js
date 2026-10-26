@@ -16,9 +16,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
 
   useEffect(() => {
     const isDuplicate = contacts.some((contact) => contact.name === name);
-    if (isDuplicate) {
-      setDuplicate(true);
-    }
+    setDuplicate(isDuplicate);
   }, [name, contacts]);
 
   const handleSubmit = (e) => {
@@ -59,7 +57,7 @@ export const ContactsPage = ({ contacts, addContact }) => {
       <hr />
       <section>
         <h2>Contacts</h2>
-        <TileList contacts={contacts} />
+        <TileList arrayProp={contacts} />
       </section>
     </div>
   );

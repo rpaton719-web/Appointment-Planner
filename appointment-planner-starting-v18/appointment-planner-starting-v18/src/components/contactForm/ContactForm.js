@@ -15,6 +15,7 @@ export const ContactForm = ({
         <label htmlFor="name">
           Name:
           <input
+            required
             id="name"
             name="name"
             type="text"
@@ -25,6 +26,7 @@ export const ContactForm = ({
         <label htmlFor="phoneNumber">
           Phone Number:
           <input
+            required
             id="phoneNumber"
             name="phoneNumber"
             type="tel"
@@ -36,6 +38,7 @@ export const ContactForm = ({
         <label htmlFor="email">
           Email:
           <input
+            required
             id="email"
             name="email"
             type="email"
